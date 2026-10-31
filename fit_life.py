@@ -1,4 +1,4 @@
-""" Проект FitLife - MVP версия 1.0 """
+"""Проект FitLife - MVP версия 1.0"""
 
 ML_TO_LITRE = 1 / 1000
 WATER_PER_KG = 30
