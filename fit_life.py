@@ -1,5 +1,6 @@
-# Проект FitLife - MVP версия 1.0
-ML2L = 1 / 1000
+""" Проект FitLife - MVP версия 1.0 """
+
+ML_TO_LITRE = 1 / 1000
 WATER_PER_KG = 30
 
 # 1. Знакомство
@@ -16,10 +17,10 @@ bmi = round(user_weight / (user_height ** 2), 1)
 
 # Подсчет воды: вес * 30 мл
 water_ml = user_weight * WATER_PER_KG
-water_l = water_ml * ML2L
+water_l = water_ml * ML_TO_LITRE
 
 # 4. Вывод красивого результата
 print(f"Отчет для пользователя: {user_name} ({user_age} г.)")
-print(f"Твой Индекс Массы Тела: {bmi}")
+print(f"Твой Индекс Массы Тела: {bmi:.1f}")
 print(f"Рекомендуемая норма воды: {water_l} л. в день")
 print("Расчет окончен. Будьте здоровы!")
